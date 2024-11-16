@@ -1,0 +1,65 @@
+/* public/styles/SignUp.css */
+
+.welcome{
+    position: absolute;
+    top: 25px;
+    font-size: 42px;
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    background-image: url('/sup.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    position: relative;
+    margin: 0;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make the form responsive to the container width */
+    max-width: 400px; /* Limit the width of the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for background */
+    position: relative; /* Ensure form stays on top of the background */
+    z-index: 1; /* Ensure form appears above the background */
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
