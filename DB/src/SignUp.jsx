@@ -3,7 +3,8 @@ import axios from 'axios';
 import './SignUp.css'; 
 import { useNavigate } from 'react-router-dom';
 
-const SignUp = () => {
+const SignUp = () => 
+{
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -11,10 +12,13 @@ const SignUp = () => {
   const [contactInformation, setContactInformation] = useState('');
 
 const navigate=useNavigate();
-  const handleSignUp = async (e) => {
+  const handleSignUp = async (e) => 
+  {
     e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:3001/signup', {
+    try 
+    {
+      const response = await axios.post('http://localhost:3001/signup', 
+      {
         username,
         password,
         email,
@@ -23,12 +27,14 @@ const navigate=useNavigate();
       });
       alert(response.data.message);
       navigate('/login');
-    } catch (error) {
+    } 
+    catch (error) 
+    {
       alert(error.response?.data?.error || 'Signup failed');
     }
   };
 
-  return (
+  return(
     <div className="background-container">
       <h1 className='welcome'>WELCOME TO KHAITI KHAATA</h1>
       <form onSubmit={handleSignUp} className="form">
